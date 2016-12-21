@@ -1,0 +1,27 @@
+{
+  "name": "cordova-usb-tethering-discovery",
+  "version": "1.0.0-rc",
+  "description": "Cordova Usb tethering Discovery",
+  "cordova": {
+    "id": "cordova-usb-tethering-discovery",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "cordova",
+    "network",
+    "discovery",
+    "httpDiscovery"
+    "usb",
+    "tethering",
+    "ssdp",
+    "cordova-android"
+  ],
+  "author": "Apache Software Foundation",
+  "license": "Apache-2.0"
+}

@@ -9,19 +9,21 @@ Notes:
  - For Linux embedded devices the USB interface may require a manually kick up `dhclient usbX`, be sure to have your linux distro configured properly.
 
  - If you don't know how UPnP/SSDP works nor if there's service available on your computer/test environment, you can use Samsung Kies.
-
+ 
+ - For iOS, SSDP port is blocked over USB Tethering (hotspot) as a workaround you can 'discover' a HTTP speakable service in the correct address range (127.20.10.X). I plan to implement a real network protocol for that and also enable the capability to use wi-fi searches, if you wish.
+ 
 ### TO-DO (improvements)
 
 - [ ] $q.notify support for UI with keep callback on cordova
 - [ ] ngCordova API - Future implementation
 - [ ] Automatic USB Tethering - Can't be done over public APIs *YET*
 - [ ] Check for SLP implementation in iOS
-- [ ] Plan a bonjour implementation, as it works in iOS Hotspots (USB/Wi-fi)
+- [ ] Plan a bonjour implementation as it works on iOS Hotspots (USB/Wi-fi)
 
 ### Implemented features
 
-- [X] UPnP M-SEARCH 1.0 / 1.1 complaint
-- [X] Android 4.4+ support (6.0.1 already tested)
+- [X] UPnP M-SEARCH 1.0 / 1.1 compatible
+- [X] Android 4.4+ support (6.1.1 already tested)
 - [x] iOS device support - Does not support UPnP multicast over USB Tethering, using HTTP "Guessing"
 over a defined LAN Class B - 172.20.1.0/24
 

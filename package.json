@@ -16,7 +16,7 @@
     "cordova",
     "network",
     "discovery",
-    "httpDiscovery"
+    "httpDiscovery",
     "usb",
     "tethering",
     "ssdp",
